@@ -1,0 +1,62 @@
+/* App.css */
+/*.app-container {
+    height: 100vh; 
+    background-image: url('https://th.bing.com/th/id/OIP.j_am1ZzRj02apNAgeJUs3wHaF7?w=233&h=186&c=7&r=0&o=5&pid=1.7');
+    background-size: cover; 
+    background-position: center; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    color: green; 
+    font-family: Arial, sans-serif; 
+    text-align: center; 
+  }
+  
+  .content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .content p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+  */
+  /* Home.css */
+
+/* Apply background image and fill the screen */
+.home-page {
+  background-image: url('https://www.rd.com/wp-content/uploads/2016/11/02-Ways-to-Make-the-Most-of-Your-Doctors-Appointment_First-appointment_93813283_cyano66.jpg'); /* Change to your desired image URL */
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  color: white;
+}
+
+/* Styling for the quote box */
+.quote-box {
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  padding: 30px 50px;
+  border-radius: 10px;
+  width: 60%; /* You can adjust the width */
+  max-width: 800px; /* Maximum width */
+}
+
+/* Styling for each quote */
+.quote-text {
+  font-size: 24px;
+  margin: 20px 0;
+  font-weight: 400;
+}
+
+/* Optional: Add some hover effect on the box */
+.quote-box:hover {
+  background: rgba(0, 0, 0, 0.7);
+  transform: scale(1.05); /* Slight zoom effect */
+  transition: all 0.3s ease;
+}

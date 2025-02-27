@@ -1,0 +1,60 @@
+/* Container for the entire page */
+.status-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  background-image: 
+    url('https://example.com/background-image.jpg'), /* Replace with your background image URL */
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); /* Gradient to darken the image */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  box-sizing: border-box;
+  color: black; /* Text color set to white for better contrast */
+}
+
+/* Box for the buttons */
+.status-box {
+  background-color: rgba(255, 255, 255, 0.8); /* Slight transparency for background */
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Soft shadow around the box */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers the buttons inside the box */
+  width: 300px; /* Set width for the box */
+  text-align: center; /* Centers the text inside the buttons */
+}
+
+/* Styling for the buttons */
+.status-button {
+  background-color: #007bff;
+  color: white;
+  padding: 15px 25px;
+  margin: 10px 0; /* Adds spacing between the buttons */
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%; /* Makes the button take full width of the container */
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Hover effect for buttons */
+.status-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Styling for small devices */
+@media (max-width: 768px) {
+  .status-box {
+    width: 80%; /* Make the box wider on small screens */
+  }
+
+  .status-button {
+    font-size: 14px;
+    padding: 12px 20px;
+  }
+}

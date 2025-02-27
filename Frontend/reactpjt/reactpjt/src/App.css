@@ -1,0 +1,26 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.primary-nav{
+  background-color:midnightblue;
+  padding: 16px 16px;
+}
+.primary-nav a{
+  text-decoration: none;
+  color:white;
+  margin-right: 16px;
+ 
+}
+.active{
+  background-color:green;
+  color: black;
+  padding: 10px;
+  font-size: 16px;
+}
+

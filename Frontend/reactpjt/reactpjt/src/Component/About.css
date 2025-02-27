@@ -1,0 +1,66 @@
+.about-us-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+    padding: 20px;
+    
+    /* Set background image */
+    background-image: url('https://wallpapercave.com/wp/wp2968489.jpg');
+    
+    /* Ensure the background image covers the full screen */
+    background-size: cover; /* Cover the area of the container */
+    background-position: center; /* Center the image in the container */
+    background-attachment: fixed; /* Keep the background fixed when scrolling */
+  }
+  
+  .about-us-content {
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.8); /* Slight transparency to let the background show through */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .about-us-content h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .about-us-content h2 {
+    font-size: 24px;
+    color: #555;
+    margin-top: 30px;
+  }
+  
+  .about-us-content p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  .about-us-content p:last-child {
+    margin-bottom: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .about-us-content {
+      padding: 15px;
+    }
+  
+    .about-us-content h1 {
+      font-size: 30px;
+    }
+  
+    .about-us-content h2 {
+      font-size: 22px;
+    }
+  
+    .about-us-content p {
+      font-size: 16px;
+    }
+  }
+  
