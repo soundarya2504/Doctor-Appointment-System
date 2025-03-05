@@ -13,7 +13,7 @@ export default function Bookapp() {
     SetTime: ["", "", ""],
   });
 
-  const [message, setMessage] = useState(""); // New state for message
+  const [message, setMessage] = useState(""); 
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -30,14 +30,13 @@ export default function Bookapp() {
     e.preventDefault();
     console.log(formdata);
 
-    // Make the POST request
+    
     axios
       .post(`http://localhost:3000/users`, formdata)
       .then((res) => {
-        // On success, set the success message
+       
         setMessage("Appointment Booked... You will be informed within 5 hours.");
         
-        // Reset the form data
         setFormData({
           Name: "",
           Age: "",
@@ -49,7 +48,7 @@ export default function Bookapp() {
         });
       })
       .catch((err) => {
-        // Handle error if any
+      
         setMessage("Appointment Booked... You will be informed within 5 hours.");
       });
   };
