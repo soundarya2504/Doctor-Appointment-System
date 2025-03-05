@@ -1,17 +1,17 @@
 import React, { useState } from "react";
 import './Doctors.css';
 
-// Function to convert 24-hour time format to 12-hour format
+
 const convertTo12HourFormat = (time) => {
   const [hour, minute] = time.split(":").map(Number);
   const suffix = hour >= 12 ? "PM" : "AM";
-  const hour12 = hour % 12 || 12; // Convert hour to 12-hour format, handle 12 PM/AM case
-  const minuteStr = minute < 10 ? `0${minute}` : minute; // Ensure minutes are 2 digits
+  const hour12 = hour % 12 || 12; 
+  const minuteStr = minute < 10 ? `0${minute}` : minute; 
   return `${hour12}:${minuteStr} ${suffix}`;
 };
 
 export default function Doctors() {
-  // Sample data for appointments with Booking Date in DD-MM-YYYY format
+ 
   const [appointments, setAppointments] = useState([
     {
       _id: "1",
@@ -70,7 +70,7 @@ export default function Doctors() {
     },
   ]);
 
-  // Handle doctor's response to appointment (Accept/Reject) with selected time
+
   const handleDoctorResponse = (id, response, time) => {
     setAppointments(
       appointments.map((appointment) =>
