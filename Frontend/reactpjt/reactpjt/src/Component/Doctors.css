@@ -1,30 +1,18 @@
-/* General Styling *//*
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-body {
-  font-family: 'Arial', sans-serif;
-  background-color: #f4f7fa; 
-  color: #333;
-}
-*/
 h2 {
   text-align: center;
-  color: #0077b6; /* Blue color for titles */
+  color: #0077b6;
   margin-bottom: 30px;
   font-size: 2rem;
   font-weight: 600;
 }
 
-/* Doctors container */
+
 .doctors-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #ffffff; /* White background for the container */
+  background-color: #ffffff; 
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
 }
@@ -34,7 +22,7 @@ h2 {
   margin-top: 20px;
 }
 
-/* Table Styling */
+
 table {
   width: 100%;
   border-collapse: collapse;
@@ -49,17 +37,17 @@ td {
 }
 
 th {
-  background-color: #00b4d8; /* Blue background for header */
+  background-color: #00b4d8; 
   color: white;
   font-weight: 600;
 }
 
 td {
-  background-color: #f9fbfd; /* Very light blue background for table rows */
+  background-color: #f9fbfd;
 }
 
 td:hover {
-  background-color: #e2f4ff; /* Hover effect */
+  background-color: #e2f4ff; 
 }
 
 button {
@@ -73,7 +61,7 @@ button {
 }
 
 button.accept {
-  background-color: #4caf50; /* Green color for Accept */
+  background-color: #4caf50; 
   color: white;
 }
 
@@ -82,7 +70,7 @@ button.accept:hover {
 }
 
 button.reject {
-  background-color: #f44336; /* Red color for Reject */
+  background-color: #f44336;
   color: white;
 }
 
@@ -90,9 +78,9 @@ button.reject:hover {
   background-color: #e53935;
 }
 
-/* Selected Time Button */
+
 button.selected {
-  background-color: #b0e0e6; /* Light blue when time is selected */
+  background-color: #b0e0e6; 
   font-weight: bold;
 }
 
@@ -100,7 +88,7 @@ button.selected:hover {
   background-color: #80c7d4;
 }
 
-/* Appointment Status */
+
 td:last-child {
   display: flex;
   flex-direction: column;
@@ -117,7 +105,7 @@ button:disabled {
   cursor: not-allowed;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
   table,
   th,
