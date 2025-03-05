@@ -6,37 +6,37 @@
   background-image: url('https://images.unsplash.com/photo-1505751172876-fa1923c5c528?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80'); /* Replace with your background image URL */
   background-size: cover;
   background-position: center;
-  background-attachment: fixed; /* Keeps the background fixed while scrolling */
-  background-repeat: no-repeat; /* Ensures background doesn't repeat */
+  background-attachment: fixed; 
+  background-repeat: no-repeat;
   box-sizing: border-box;
-  overflow: hidden; /* Prevents scrollbars if image is too big */
+  overflow: hidden;
 }
 
 .login-box {
-  background:rgba(255, 255, 255, 0.8) ; /* Slightly transparent dark background */
+  background:rgba(255, 255, 255, 0.8) ; 
   padding: 30px;
-  width: 30%; /* Increased width for better usability */
-  max-width: 400px; /* Limits max width */
+  width: 30%; 
+  max-width: 400px;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Improved box shadow for better visibility */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); 
   text-align: center;
 }
 
 .login-box h2 {
   margin-bottom: 20px;
   font-size: 24px;
-  color: black; /* Ensure text is visible */
+  color: black; 
 }
 
 .login-box input {
   display: block;
-  width: 100%; /* Ensure full-width input */
+  width: 100%; 
   margin: 15px 0;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-sizing: border-box;
-  font-size: 16px; /* Make the input text larger */
+  font-size: 16px;
 }
 
 .login-box button {
@@ -44,7 +44,7 @@
   color: white;
   padding: 12px;
   border: none;
-  width: 100%; /* Button width to match input width */
+  width: 100%;
   cursor: pointer;
   border-radius: 5px;
   font-size: 18px;
@@ -56,6 +56,6 @@
 
 @media (max-width: 768px) {
   .login-box {
-    width: 80%; /* For smaller screens */
+    width: 80%; 
   }
 }
