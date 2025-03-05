@@ -1,17 +1,17 @@
-/* src/SignUp.css */
+
 .signup-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url('https://wallpapercave.com/wp/wp2386912.jpg'); /* Replace with your image URL */
+    background-image: url('https://wallpapercave.com/wp/wp2386912.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   }
   
   .signup-form {
-    background-color: rgba(255, 255, 255, 0.8); /* Light transparent background */
+    background-color: rgba(255, 255, 255, 0.8); 
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
