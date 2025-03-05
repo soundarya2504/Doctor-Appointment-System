@@ -6,19 +6,19 @@ const Status = () => {
   const [cancelMessage, setCancelMessage] = useState('');
 
   const handleViewAppointment = () => {
-    // Show appointment details with date in dd.mm.yyyy format
-    const appointmentDate = new Date(2025, 1, 25); // 25th February 2025
+  
+    const appointmentDate = new Date(2025, 1, 25);
     const formattedDate = `${appointmentDate.getDate()}.${appointmentDate.getMonth() + 1}.${appointmentDate.getFullYear()}`;
     setViewMessage(`Your appointment is scheduled for ${formattedDate} at 9:00 AM.`);
-    /*setViewMessage(`Your appointment in process...`);*/
-    /*setViewMessage(`Your appointment is cancelled`);*/
-    setCancelMessage(''); // Clear cancellation message if present
+    
+   
+    setCancelMessage(''); 
   };
 
   const handleCancelAppointment = () => {
-    // Show cancellation success message
+   
     setCancelMessage("Appointment cancelled successfully.");
-    setViewMessage(''); // Clear appointment details if present
+    setViewMessage(''); 
   };
 
   return (
