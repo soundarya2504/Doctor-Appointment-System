@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-// Example doctor data with photo URL and a description
 const doctors = [
   {
     id: 1,
@@ -57,7 +56,7 @@ const doctors = [
     fullDescription: "Dr. Raj is highly experienced in diagnosing and treating complex neurological conditions. He is well-versed in both clinical and surgical treatments.",
     photo: "https://static.vecteezy.com/system/resources/previews/034/780/002/original/medical-practitioner-icon-on-white-background-free-vector.jpg"
   },
-  // Orthopedist doctors
+
   {
     id: 7,
     name: "Dr. S. Patel, M.D",
@@ -76,7 +75,7 @@ const doctors = [
     fullDescription: "Dr. Reddy has helped many patients recover from complex surgeries, offering personalized care and rehabilitation advice to ensure the best outcomes for patients with musculoskeletal disorders.",
     photo: "https://static.vecteezy.com/system/resources/previews/034/780/002/original/medical-practitioner-icon-on-white-background-free-vector.jpg" // Placeholder for doctor's photo
   },
-  // Pediatrician doctors
+
   {
     id: 9,
     name: "Dr. M. Kumar, M.D",
@@ -101,7 +100,7 @@ const DoctorList = ({ specialization }) => {
   const [selectedDoctor, setSelectedDoctor] = useState(null);
   const navigate = useNavigate();
 
-  // Filter doctors based on selected specialization (show all if no specialization is selected)
+
   const filteredDoctors = specialization === "All" 
     ? doctors 
     : doctors.filter((doctor) => doctor.specialization === specialization);
@@ -124,12 +123,12 @@ const DoctorList = ({ specialization }) => {
           <p>{doctor.description}</p>
           <button onClick={() => navigate(`/book/${doctor.id}`)}>Book Appointment</button>
 
-          {/* "View Details" button placed at the right corner of the card */}
+          { }
           <button className="view-details-btn" onClick={() => handleViewDetails(doctor)}>
             View Details
           </button>
 
-          {/* Show doctor details in the right panel */}
+          { }
           {selectedDoctor && selectedDoctor.id === doctor.id && (
             <div className="doctor-details">
               <div className="doctor-details-content">
