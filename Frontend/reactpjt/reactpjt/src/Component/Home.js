@@ -1,24 +1,6 @@
-/*import React from 'react'
-import { useNavigate } from 'react-router-dom'
-import './Home.css'
-export default function Home() {
-    const navigate = useNavigate()
-  return (
-    <div className="app-container">
-      <div className="content">
-        <h1>View Doctors, Book an Appointment</h1>
-        <p>Find experienced doctors across all specialties</p>
-      </div>
-    </div>
-  );
-};
 
-
-
-*/
-// Home.js
 import React from 'react';
-import './Home.css'; // Import CSS file for styling
+import './Home.css';
 
 const Home = () => {
   return (
