@@ -13,13 +13,13 @@ export default function Admin1() {
 
   const handleLogin = () => {
     if (doctorName && specialization && email && password) {
-      // Login successful, fetch patient data from backend
+     
       axios
-        .get("http://localhost:3000/patients") // Get patient data
+        .get("http://localhost:3000/patients") 
         .then((response) => {
-          setPatients(response.data); // Set the patients data
+          setPatients(response.data); 
           alert("Login Successful!");
-          navigate("/doctor-home"); // Redirect to doctor home page
+          navigate("/doctor-home");
         })
         .catch((err) => {
           alert("Error fetching patient details.");
@@ -30,12 +30,12 @@ export default function Admin1() {
   };
 
   const handleConfirm = (id) => {
-    // Handle confirm appointment action
+   
     axios
       .put(`http://localhost:3000/patients/${id}`, { status: "Confirmed" })
       .then((res) => {
         alert("Appointment Confirmed");
-        // Update patient data locally
+      
         setPatients((prev) =>
           prev.map((patient) =>
             patient.id === id ? { ...patient, status: "Confirmed" } : patient
@@ -48,12 +48,12 @@ export default function Admin1() {
   };
 
   const handleCancel = (id) => {
-    // Handle cancel appointment action
+  
     axios
       .put(`http://localhost:3000/patients/${id}`, { status: "Cancelled" })
       .then((res) => {
         alert("Appointment Cancelled");
-        // Update patient data locally
+      
         setPatients((prev) =>
           prev.map((patient) =>
             patient.id === id ? { ...patient, status: "Cancelled" } : patient
