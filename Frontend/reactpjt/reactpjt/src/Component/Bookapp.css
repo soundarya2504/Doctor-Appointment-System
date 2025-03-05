@@ -1,33 +1,33 @@
-/* Styling for the Bookapp page container */
+
 .bookapp-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Full viewport height */
+  height: 100vh; 
   padding: 20px;
   background-image: url('https://img.onmanorama.com/content/dam/mm/en/lifestyle/health/images/2020/12/1/medical-doctor-c.jpg'); /* Replace with your background image URL */
-  background-size: cover; /* Make sure the background image covers the whole screen */
+  background-size: cover;
   background-position: center;
-  background-attachment: fixed; /* Keeps the background fixed while scrolling */
+  background-attachment: fixed; 
   box-sizing: border-box;
-  overflow: auto; /* Ensures scrolling when the content overflows */
+  overflow: auto; 
 }
 
-/* Form styling specific to Bookapp */
+
 .formcont {
-  background-color: rgba(255, 255, 255, 0.9); /* White background with some transparency */
+  background-color: rgba(255, 255, 255, 0.9); 
   padding: 30px;
   width: 350px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
-  text-align: left; /* Align form text to the left */
-  overflow: auto; /* Allows scrolling within the form if content overflows */
-  max-height: 80vh; /* Limit the height of the form */
+  text-align: left; 
+  overflow: auto; 
+  max-height: 80vh;
 }
 
-/* Styling for labels */
+
 .formcont label {
   font-weight: bold;
   margin-top: 10px;
@@ -35,7 +35,7 @@
   color: #333;
 }
 
-/* Styling for input fields */
+
 .formcont input {
   width: 95%;
   padding: 10px;
@@ -46,27 +46,26 @@
   margin-bottom: 15px;
 }
 
-/* Radio button styling */
+
 .formcont input[type="radio"] {
   width: auto;
   margin-right: 10px;
 }
 
-/* Fieldset styling */
 .formcont fieldset {
   border: none;
   margin: 15px 0;
   padding: 10px;
 }
 
-/* Gender legend styling */
+
 .formcont legend h3 {
   font-size: 18px;
   color: #555;
   margin-bottom: 10px;
 }
 
-/* Submit button styling */
+
 .formcont button {
   margin-top: 20px;
   padding: 12px;
@@ -79,15 +78,15 @@
   width: 100%;
 }
 
-/* Button hover effect */
+
 .formcont button:hover {
   background-color: #0056b3;
 }
 
-/* Styling for small devices */
+
 @media (max-width: 768px) {
   .formcont {
-    width: 80%; /* Make the form take up more space on smaller screens */
+    width: 80%; 
   }
 
   .formcont label {
